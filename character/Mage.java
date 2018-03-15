@@ -13,6 +13,7 @@ public class Mage extends Player{
 
     }
 
-
-
+    public double getCurrentMana() {
+        return currentMana;
+    }
 }
