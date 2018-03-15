@@ -26,7 +26,6 @@ public class WarriorSkills {
         double w1;
         double r1 = 80;
         if (Warrior.rage >= r1) {
-
             w1 = Warrior.attack + 50;
             Warrior.setRage(Warrior.rage - r1);
             return w1;

@@ -52,7 +52,7 @@ public class MageSkills {
     }
 
     public static double pyroBlast(){
-        skillDamage += skillDamage*0.2 + skillDamage;
+        skillDamage = skillDamage * 420/100;
         requiredMana = 40;
         Mage.setCurrentMana(Mage.getCurrentMana() - requiredMana);
         String name = "Wybuch ognia";
