@@ -4,11 +4,14 @@ import character.Mage;
 
 public class MageSkills {
 
+    //DOUBLE
     static double skillDamage = Mage.magicPower + Mage.attack;
     static double requiredMana;
     static double normalAttack = Mage.attack;
+    //BOOLEAN
     static boolean isPyroEnhanced;
     static boolean isFrosted;
+    //STRING
     static String defaultString = "Użyłeś magii: ";
 
 
