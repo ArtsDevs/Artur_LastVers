@@ -4,16 +4,40 @@ import java.util.Random;
 
 public class Hunter extends Player {
 
-    public double ShotDmg;
-    public int agillity;
-    public double stamina = 100;
+    public static double ShotDmg;
+    public static int agillity;
+    public static double stamina = 100;
 
+    public Hunter(){}
     public Hunter(String name, double maxHp, double currentHp, double strength, double intelligence, double speed, double knowlage, double attack, double defense, double shotDmg){
         super(name, maxHp,currentHp, strength, intelligence, speed,knowlage, attack, defense );
         this.agillity = 2;
         this.ShotDmg = shotDmg * agillity;
     }
 
+    public static double getShotDmg() {
+        return ShotDmg;
+    }
+
+    public static int getAgillity() {
+        return agillity;
+    }
+
+    public static double getStamina() {
+        return stamina;
+    }
+
+    public static void setShotDmg(double shotDmg) {
+        ShotDmg = shotDmg;
+    }
+
+    public static void setAgillity(int agillity) {
+        Hunter.agillity = agillity;
+    }
+
+    public static void setStamina(double stamina) {
+        Hunter.stamina = stamina;
+    }
 
     @Override
     public boolean equals(Object obj) {
