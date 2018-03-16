@@ -19,7 +19,6 @@ public abstract class Npcs {
     public Npcs() {
     }
 
-    ;
 
     //methods
     public abstract String getDescription();
