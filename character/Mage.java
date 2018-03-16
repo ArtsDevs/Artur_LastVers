@@ -1,5 +1,8 @@
 package character;
 
+import item.Armors.ArmorsList;
+import item.Jewellery.JewelleryList;
+
 public class Mage extends Player{
 
     public static double maxMana, currentMana;
@@ -34,7 +37,16 @@ public class Mage extends Player{
         Mage.currentMana = currentMana;
     }
 
-    public static void setMagicPower(double magicPower) {
-        Mage.magicPower = magicPower;
+    public static void setMagicPower(double magicPower) {Mage.magicPower = magicPower;}
+
+
+    //Items Wearing methods
+    public void setWearChest(ArmorsList chest, int index){
+        super.setWearChest(chest, index);
     }
+    public void setWearJewellery(JewelleryList trinket, int index){
+        super.setWearJewellery(trinket, index);
+        maxMana = JewelleryList.JewelleryArray[index].improveMana + maxMana;
+    }
+
 }

@@ -7,7 +7,7 @@ public class JewelleryList {
                 0, 0, 0, 0, 5, 5, 10,
                 0, 1,0);
 
-        static Jewellery Jewellery1 = new Jewellery("Naszyjnik many", 121, 500, 1,5, 80,
+        static Jewellery Jewellery1 = new Jewellery("Naszyjnik many", 121, 500, 1,5, 80,//tylko dla maga
                 0, 0,0, 0, 0, 10, 10,
                 0,1, 0);
 
@@ -25,7 +25,7 @@ public class JewelleryList {
         static Jewellery Jewellery5 = new Jewellery("Bransoleta nienawiści", 123, 800, 4,10, 20,
             2, 2, 30, 20, 5, 5,5,
             10,1,0);
-        public static Jewellery JeweleryArray[] = {Jewellery0, Jewellery1, Jewellery2, Jewellery3, Jewellery4, Jewellery5};
+        public static Jewellery JewelleryArray[] = {Jewellery0, Jewellery1, Jewellery2, Jewellery3, Jewellery4, Jewellery5};
     }
 
 

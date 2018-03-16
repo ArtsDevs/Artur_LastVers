@@ -10,7 +10,7 @@ public abstract class Npcs {
 
     //constructors
     public Npcs(boolean Aggresive, double HP, String name, String description) {
-        this.Aggresive = Aggresive;
+        this.Aggresive = true;
         this.HP = HP;
         this.name = name;
         this.description = description;

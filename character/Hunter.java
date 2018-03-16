@@ -1,11 +1,14 @@
 package character;
 
+import item.Armors.ArmorsList;
+import item.Jewellery.JewelleryList;
+
 import java.util.Random;
 
 public class Hunter extends Player {
 
     public static double ShotDmg;
-    public static int agillity;
+    public static double agillity;
     public static double stamina = 100;
 
     public Hunter(){}
@@ -19,7 +22,7 @@ public class Hunter extends Player {
         return ShotDmg;
     }
 
-    public static int getAgillity() {
+    public static double getAgillity() {
         return agillity;
     }
 
@@ -43,4 +46,15 @@ public class Hunter extends Player {
     public boolean equals(Object obj) {
         return super.equals(obj);
     }
+
+
+    //Items Wearing methods
+    public void setWearChest(ArmorsList chest, int index){
+        super.setWearChest(chest, index);
+    }
+    public void setWearJewellery(JewelleryList trinket, int index){
+        super.setWearJewellery(trinket, index);
+        agillity = JewelleryList.JewelleryArray[index].improveAgility + agillity;
+    }
+
 }

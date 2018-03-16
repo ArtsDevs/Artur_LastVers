@@ -1,5 +1,8 @@
 package character;
 
+import item.Armors.ArmorsList;
+import item.Jewellery.JewelleryList;
+
 public class Warrior extends Player {
 
     public static double maxRage, rage;
@@ -26,5 +29,13 @@ public class Warrior extends Player {
 
     public static void setRage(double rage) {
         Warrior.rage = rage;
+    }
+    //Items Wearing methods
+    public void setWearChest(ArmorsList chest, int index){
+        super.setWearChest(chest, index);
+    }
+    public void setWearJewellery(JewelleryList trinket, int index){
+        super.setWearJewellery(trinket, index);
+
     }
 }
