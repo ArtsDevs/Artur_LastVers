@@ -2,6 +2,9 @@ package item.Weapons;
 
 import item.Items;
 
+//search: BRONIE: 1-Miecze, 2-Sztylety, 3-Topory, tasaki, 4,5,6,7,8,9,10 (można dodać)
+//INNE: 11 - Wachlarze, 12 - MagiczneLaski, 13- Łuki, 14,15,16,..
+
 public class Weapons extends Items {
 
     public double improveSpeedAttack;
