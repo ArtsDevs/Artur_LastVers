@@ -11,9 +11,11 @@ public abstract class Player {
     public static double strength, intelligence, speed, knowlage;
     public static double attack, defense;
     public static Items[] wear = new Items[6];
+    public static double exp;
+    public static double reqExp;
 
     public Player(){};
-    public Player(String name, double maxHp, double strength, double intelligence, double speed, double knowlage, double attack, double defense, double currentHp){
+    public Player(String name, double maxHp, double strength, double intelligence, double speed, double knowlage, double attack, double defense, double currentHp, double reqExp){
         this.name = name;
         this.maxHp = maxHp;
         this.strength = strength;
@@ -23,6 +25,7 @@ public abstract class Player {
         this.attack = attack + (0.2* strength);
         this.defense = defense;
         this.currentHp = maxHp;
+        this.reqExp = reqExp;
     }
 
 //Items Wearing Methods
@@ -49,6 +52,25 @@ public abstract class Player {
         attack = JewelleryList.JewelleryArray[i].improveAttack + attack;
         intelligence = JewelleryList.JewelleryArray[i].improveIntelligence + intelligence;
         strength = JewelleryList.JewelleryArray[i].improveStrength + strength;
+    }
+    public static void EXP(double reqExp){
+        if(reqExp >= 1000){
+            reqExp = reqExp*2;
+            maxHp +=10;
+            strength +=10;
+            intelligence +=10;
+            speed +=10;
+            knowlage +=10;
+            attack +=10;
+            defense +=10;
+
+        }
+    }
+    public static double getAttackTest(){
+        System.out.println("Wyswietlam atak " + Player.attack);
+
+        return Player.attack;
+
     }
 
 }

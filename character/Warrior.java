@@ -8,8 +8,8 @@ public class Warrior extends Player {
     public static double maxRage, rage;
 
     public Warrior(){}
-    public Warrior(String name, double maxHp, double currentHp, double strength, double intelligence, double speed, double knowlage, double attack, double defense, double shotDmg){
-        super(name, maxHp,currentHp, strength, intelligence, speed,knowlage, attack, defense );
+    public Warrior(String name, double maxHp, double currentHp, double strength, double intelligence, double speed, double knowlage, double attack, double defense, double shotDmg,double exp){
+        super(name, maxHp,currentHp, strength, intelligence, speed,knowlage, attack, defense,exp );
         this.rage = 0;
         this.maxRage = 100;
     }

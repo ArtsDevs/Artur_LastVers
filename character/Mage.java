@@ -9,8 +9,8 @@ public class Mage extends Player{
     public static double magicPower; //
 
     public Mage(){}
-    public Mage(String name, double maxHp, double currentHp, double strength, double intelligence, double speed, double knowlage, double attack, double defense, double shotDmg){
-        super(name, maxHp,currentHp, strength, intelligence, speed,knowlage, attack, defense );
+    public Mage(String name, double maxHp, double currentHp, double strength, double intelligence, double speed, double knowlage, double attack, double defense, double shotDmg,double exp){
+        super(name, maxHp,currentHp, strength, intelligence, speed,knowlage, attack, defense,exp );
         this.maxMana= 70;
         this.currentMana = 70;
         this.magicPower = (intelligence + knowlage) / 2; //this.magicPower = (intelligence + knowlage) / 2; //
