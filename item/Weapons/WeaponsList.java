@@ -18,7 +18,7 @@ public class WeaponsList {
             5, 15, 5, 0, 0, 0,
             5, 1, 1);
 
-    public static Weapons Weapon4 = new Weapons("Zwykły miecz", 1, 250, 1, 2,
+    public static Weapons Weapon4 = new Weapons("Niezwykły miecz", 1, 250, 1, 2,
             2, 10, 5, 0, 0, 0,
             5, 1, 1);
 
