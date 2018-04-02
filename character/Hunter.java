@@ -18,6 +18,7 @@ public class Hunter extends Player {
         this.ShotDmg = shotDmg * agillity;
     }
 
+    // Getters
     public static double getShotDmg() {
         return ShotDmg;
     }
@@ -30,6 +31,7 @@ public class Hunter extends Player {
         return stamina;
     }
 
+    // Setters
     public static void setShotDmg(double shotDmg) {
         ShotDmg = shotDmg;
     }
@@ -42,10 +44,7 @@ public class Hunter extends Player {
         Hunter.stamina = stamina;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
+
 
 
     //Items Wearing methods

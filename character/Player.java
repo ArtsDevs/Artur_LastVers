@@ -46,7 +46,7 @@ public abstract class Player {
 
     public void setWearJewellery(JewelleryList trinket, int index){
         int i = index;
-        wear[3] = JewelleryList.JewelleryArray[0];
+        wear[3] = JewelleryList.JewelleryArray[index];
         maxHp = JewelleryList.JewelleryArray[i].improveHealth + maxHp;
         defense = JewelleryList.JewelleryArray[i].improveDeffence + defense;
         attack = JewelleryList.JewelleryArray[i].improveAttack + attack;
@@ -68,9 +68,7 @@ public abstract class Player {
     }
     public static double getAttackTest(){
         System.out.println("Wyswietlam atak " + Player.attack);
-
         return Player.attack;
-
     }
 
 }

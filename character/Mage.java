@@ -17,6 +17,7 @@ public class Mage extends Player{
 
     }
 
+    //Getters
     public static double getCurrentMana() {
         return currentMana;
     }
@@ -29,6 +30,7 @@ public class Mage extends Player{
         return magicPower;
     }
 
+    // Setters
     public static void setMaxMana(double maxMana) {
         Mage.maxMana = maxMana;
     }

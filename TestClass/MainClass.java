@@ -1,6 +1,8 @@
 package TestClass;
 
 import GameMech.Move;
+import Map.ChapterOne;
+import Map.Locations;
 import character.Hunter;
 import character.Player;
 import npces.monsters.Bosses.Anubis;
@@ -9,19 +11,11 @@ import npces.neutrals.Trademan;
 
 public class MainClass {
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
-            Hunter janek = new Hunter("janek", 10,10,10,10,10,10,10,10,10,0);
-        Hunter.getAttackTest();
-        Hunter.EXP(1001);
-        Hunter.getAttackTest();
+        ChapterOne startLoc = new ChapterOne();
 
-       Move north = new Move();
-       Move south = new Move();
-       // north.movenorth();
-
-        Move Forest = new Move();
-        Forest.Forest();
+        startLoc.StartLocation(1);
 
     }
 }

@@ -14,7 +14,7 @@ public class Warrior extends Player {
         this.maxRage = 100;
     }
 
-
+//Getters
     public static double getMaxRage() {
         return maxRage;
     }
@@ -23,6 +23,7 @@ public class Warrior extends Player {
         return rage;
     }
 
+//Setters
     public static void setMaxRage(double maxRage) {
         Warrior.maxRage = maxRage;
     }
@@ -30,6 +31,7 @@ public class Warrior extends Player {
     public static void setRage(double rage) {
         Warrior.rage = rage;
     }
+
     //Items Wearing methods
     public void setWearChest(ArmorsList chest, int index){
         super.setWearChest(chest, index);
